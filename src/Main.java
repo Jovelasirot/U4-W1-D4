@@ -25,6 +25,8 @@ public class Main {
             System.out.println("Employee number: " + employees[i].getId());
         }
 
+        System.out.println("-------------------------");
+        
 //        Es2
         for (Employee employee : employees) {
             System.out.println("Employee number: " + employee.getId());
