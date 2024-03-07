@@ -20,7 +20,7 @@ public class Main {
                 (15, Department.SALES, 1500, 20, 15);
 
 
-        System.out.println(employeeWithExtras.calculateSalary());
+        System.out.println("Employee full-time with extra hours: " + employeeWithExtras.calculateSalary());
 
 
         Employee[] employees =

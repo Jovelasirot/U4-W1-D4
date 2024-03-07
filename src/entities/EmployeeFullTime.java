@@ -16,7 +16,7 @@ public class EmployeeFullTime extends Employee implements CheckIn {
     public EmployeeFullTime
             (int id, Department department, double monthlySalary, int extraHours, int payForExtraHours) {
         super(id, department);
-        this.monthlySalary = monthlySalary + (extraHours * payForExtraHours);
+        this.monthlySalary = monthlySalary + extraHours * payForExtraHours;
     }
 
     @Override
