@@ -22,7 +22,7 @@ public class Main {
 
         System.out.println(employeeWithExtras.calculateSalary());
 
-        
+
         Employee[] employees =
                 {employee1, employee2, employee3};
 
@@ -40,7 +40,6 @@ public class Main {
             System.out.println("Department: " + employee.getDepartment());
             System.out.println("Salary: " + employee.calculateSalary() + " $");
             System.out.println("-------------------------");
-            ;
         }
 
 //        Es3
