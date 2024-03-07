@@ -13,7 +13,7 @@ public class EmployeeFullTime extends Employee implements CheckIn {
         this.monthlySalary = monthlySalary;
     }
 
-    private EmployeeFullTime
+    public EmployeeFullTime
             (int id, Department department, double monthlySalary, int extraHours, int payForExtraHours) {
         super(id, department);
         this.monthlySalary = monthlySalary + (extraHours * payForExtraHours);

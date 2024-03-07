@@ -16,6 +16,13 @@ public class Main {
         Administration employee3 = new Administration
                 (1, Department.ADMINISTRATION, 10000, 2500);
 
+        EmployeeFullTime employeeWithExtras = new EmployeeFullTime
+                (15, Department.SALES, 1500, 20, 15);
+
+
+        System.out.println(employeeWithExtras.calculateSalary());
+
+        
         Employee[] employees =
                 {employee1, employee2, employee3};
 
@@ -26,7 +33,7 @@ public class Main {
         }
 
         System.out.println("-------------------------");
-        
+
 //        Es2
         for (Employee employee : employees) {
             System.out.println("Employee number: " + employee.getId());
