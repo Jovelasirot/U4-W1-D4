@@ -21,6 +21,6 @@ public class EmployeePartTime extends Employee implements CheckIn {
 
     @Override
     public void chekIn() {
-        System.out.println("Employee number" + getId() + "checked in");
+        System.out.println("Employee number " + getId() + " checked in");
     }
 }
