@@ -1,6 +1,8 @@
 package entities;
 
-public class EmployeePartTime extends Employee {
+import entities.interfaces.CheckIn;
+
+public class EmployeePartTime extends Employee implements CheckIn {
     private double hourlySalary;
     private int hoursWorking;
 
@@ -14,5 +16,11 @@ public class EmployeePartTime extends Employee {
     @Override
     public double calculateSalary() {
         return hourlySalary * hoursWorking;
+    }
+
+
+    @Override
+    public void chekIn() {
+        System.out.println("Employee number" + getId() + "checked in");
     }
 }

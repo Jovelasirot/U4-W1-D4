@@ -6,7 +6,7 @@ public abstract class Employee {
 
     private Department department;
 
-    public Employee(int id,  Department department) {
+    public Employee(int id, Department department) {
         this.id = id;
         this.department = department;
         this.department = department;
@@ -17,9 +17,11 @@ public abstract class Employee {
     }
 
 
-    public Department getDepartement() {
+    public Department getDepartment() {
         return department;
     }
 
     public abstract double calculateSalary();
+
+
 }

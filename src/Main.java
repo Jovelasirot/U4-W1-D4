@@ -1,6 +1,9 @@
 import entities.*;
+import entities.interfaces.CheckIn;
 
 public class Main {
+
+
     public static void main(String[] args) {
 
         EmployeePartTime employee1 = new EmployeePartTime
@@ -16,14 +19,31 @@ public class Main {
         Employee[] employees =
                 {employee1, employee2, employee3};
 
+
+//        Es1
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println("Employee number: " + employees[i].getId());
+        }
+
+//        Es2
         for (Employee employee : employees) {
             System.out.println("Employee number: " + employee.getId());
-            System.out.println("Department: " + employee.getDepartement());
+            System.out.println("Department: " + employee.getDepartment());
             System.out.println("Salary: " + employee.calculateSalary() + " $");
             System.out.println("-------------------------");
             ;
         }
 
+//        Es3
+        Volunteering volunteer1 = new Volunteering
+                ("Joe", 21, "Studied Interior Design");
 
+
+        CheckIn[] checkIns = {employee1, volunteer1};
+
+        for (int i = 0; i < checkIns.length; i++) {
+            checkIns[i].chekIn();
+        }
     }
+
 }

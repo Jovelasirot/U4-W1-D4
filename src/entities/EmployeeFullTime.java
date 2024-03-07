@@ -1,6 +1,8 @@
 package entities;
 
-public class EmployeeFullTime extends Employee {
+import entities.interfaces.CheckIn;
+
+public class EmployeeFullTime extends Employee implements CheckIn {
     private double monthlySalary;
     private int extraHours;
     private int payForExtraHours;
@@ -23,4 +25,8 @@ public class EmployeeFullTime extends Employee {
     }
 
 
+    @Override
+    public void chekIn() {
+        System.out.println(getId() + "checked in");
+    }
 }
